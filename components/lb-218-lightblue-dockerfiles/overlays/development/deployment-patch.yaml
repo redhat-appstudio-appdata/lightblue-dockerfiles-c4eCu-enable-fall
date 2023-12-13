@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: lb-218-lightblue-dockerfiles
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/dhaynes-tenant/lightblue-dockerfiles/lb-218-lightblue-dockerfiles@sha256:7405f80762373fbcea3bd7853ca04272610de24013b0474792c508f7b9171249
+        name: container-image
+        resources: {}
+status: {}
