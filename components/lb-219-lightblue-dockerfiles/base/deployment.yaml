@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: lb-219-lightblue-dockerfiles
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/dhaynes-tenant/lightblue-dockerfiles/lb-219-lightblue-dockerfiles@sha256:8ba4020d9692e9710aa1ee038f97fe572ae19a2ce04139a5682d462505337a79
         imagePullPolicy: Always
         name: container-image
         ports:
